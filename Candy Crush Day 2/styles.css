@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Kospix-Demo'; /* Name you'll use in CSS */
+    src: url('KospixDemo-G3xxD.otf') format('truetype'); /* Path to font file */
+    font-weight: bold;
+    font-style: normal;
+    
+}
+
+body {
+    font-family: 'Kospix-Demo', 'KospixDemoItalic-j922M.otf', sans-serif;
+    background-image: url('https://wallpaperaccess.com/full/3706941.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+      
+}
+
+body>h1 {
+    text-align: center;
+    color: #CCB638;
+    font-size: 50px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 0;
+    
+}
+
+.candy-crush {
+    margin: 0;
+    padding: 0;
+}
+
+.score, h2 {
+    color: #000;
+    display: inline;
+    font-size: 40px;
+    text-align: left;
+    background-color: #CCB638; 
+    margin: 0 auto;
+    border-radius: 10px;  
+    padding: 5px 5px;
+    margin-bottom: 20px;
+}
+
+#game-board {
+    height: 380px;
+    width: 380px;
+    margin: 20px auto;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: #000 solid 5px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    /* flex-wrap: wrap; */
+    justify-content: center;
+
+}
+
+#game-board img{
+    width: 40px;
+    height: 40px;
+}
