@@ -1,0 +1,293 @@
+@font-face {
+    font-family: nb;
+    src: url(./assets/fonts/SuisseIntl-Light.woff2)
+}
+
+@font-face {
+    font-family: bol;
+    src: url(./assets/fonts/SuisseIntl-Regular.woff2);
+    /* font-weight: 500; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: nb;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    background-color: black;
+}
+
+.page-1 {
+    height: 74vh;
+    width: 100%;
+    background-color: black;
+    /* position: relative; */
+}
+
+.cursor {
+    height: 7vw;
+    width: 10vw;
+    color: #1387a4;
+    /* border-radius: 50%; */
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transform: translate(-50%, -50%); */
+}
+
+.cursor h5 {
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+
+.page-2 video {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.page-1-content h1 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    color: #fff;
+    margin-right: auto;
+    /* display: flex; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    /*  */
+    /* background-color: black; */
+}
+
+nav {
+    height: 90px;
+    width: 100%;
+    /* background-color: transparent; */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 3.1vw;
+    position: sticky;
+    z-index: 10;
+
+}
+
+nav h3 {
+    font-size: 1.1vw;
+    font-weight: 550;
+    font-family: bol;
+}
+
+nav h4 {
+    font-size: 1.1vw;
+    font-weight: 500;
+    font-family: bol;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.3rem;
+    margin-left: 9rem;
+}
+
+.nav h4 {
+    font-size: 1.1vw;
+    font-weight: 500;
+    font-family: bol;
+}
+
+.page-1-content h1 {
+    font-family: nb;
+    font-size: 14.6vw;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10vw;
+    /* padding: 0 rem; */
+}
+
+.page-1-content h1 span {
+    font-family: "Circular Std Bold", sans-serif;
+    gap: -2px;
+    display: inline-block;
+}
+
+.page-2 {
+    height: 100vh;
+    width: 100%;
+    background-color: beige;
+    color: black;
+}
+
+.bottom-content {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    z-index: 8;
+    
+}
+.bottom-content h3 {
+    font-family: nb;
+    font-size: 1.2vw;
+    font-weight: 100;
+    margin-left: 2rem;
+    color: #fff;
+    margin-bottom: -50vw;
+    
+}
+
+.down-arrow {
+    /* font-size: 2vw; */
+    margin-left: 2rem;
+    /* margin-top: -40vw; */
+    color: #fff;
+}
+
+.page-3 {
+    min-height: 100vh;
+    /* width: 100%; */
+    background-color: #000;
+    color: #fff;
+    
+}
+
+.page3-top {
+    margin: 2rem 0;
+    padding: 2rem 2rem;
+}
+
+.page3-top h2 {
+    font-family:nb;
+    font-size: 4.3vw;
+    font-weight: 300;
+    line-height: 1.1;
+    /* margin-left: 2rem; */
+    /* margin-top: 2rem; */
+}
+
+.page3-top .first-line {
+    margin-left: 12.5rem;
+    /* margin-top: 2rem !important; */
+}
+
+.page-4 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-4 .box {
+    height: 90%;
+    width: 90%;
+    object-position: center;
+    position: relative;
+    
+}
+
+.page-4 .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;  
+    position: absolute;
+}
+
+.page-4 .box video {
+    height: 280px;
+    width: 200px;
+    border-radius: 5px;
+    object-fit: cover; 
+    z-index: 10;   
+    position: absolute;
+    opacity: 0;
+}
+
+.page-4 .box:hover img{
+    opacity: 0.6;
+}
+
+.page-5 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.page-5 .box-2 {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+.page-5 .box-2 .box {
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    position: relative;
+    margin: 1rem 0.9rem;
+}
+
+.page-5 .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;  
+    position: absolute;
+}
+
+.page-5 .box-2 .left-box video, .page-5 .box-2 .right-box video {
+    height: 280px;
+    width: 200px;
+    border-radius: 5px;
+    object-fit: cover;  
+    z-index: 10;
+    position: absolute;  
+    opacity: 0;
+}
+
+.page-5 .box-2 .box:hover img{
+    opacity: 0.6;
+}
+
+.loader {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: rgb(247, 247, 247);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav > h2{
+    background: linear-gradient(to right, white, grey);
+}
+
+.page-3-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
